@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChristopMan</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      overflow-y: hidden;
+      background-color: black;
+    }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: red;
+      font-size: 5em;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <div class="title">You Lose!</div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./node_modules/three/build/three.module.js",
+          "OrbitControls": "./node_modules/three/examples/jsm/controls/OrbitControls.js",
+          "GLTFLoader": "./node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+          "@lodash/startCase": "https://unpkg.com/lodash-es@4.17.21/startCase.js"
+        }
+      }
+    </script>
+    <script type="module" src="lib/slendermen.js"></script>
+  </body>
+</html>

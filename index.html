@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChristopMan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="loading-spinner">
+            <svg class="spinner" viewBox="0 0 50 50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+            </svg>
+        </div>
+        <p>Loading...</p>
+    </div>
+
+    <div class="key">
+        <img src="img/key.png" width="5%" alt="">
+        <span class="point" id="point">x0</span>
+    </div>
+
+    <div class="stamina-bar-container">
+        <div class="stamina-bar" id="stamina-bar"></div>
+    </div>
+
+    <audio id="coin">
+        <source src="sound/coin.wav" type="audio/wav">
+    </audio>
+
+    <!-- <audio id="horror" autoplay loop>
+        <source src="sound/horror.mp3" type="audio/mp3">
+    </audio> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "orbitcontrols": "./node_modules/three/examples/jsm/controls/OrbitControls.js",
+            "pointers": "./node_modules/three/examples/jsm/controls/PointerLockControls.js",
+            "physics": "./node_modules/three/examples/jsm/physics/RapierPhysics.js",
+            "gltfloader": "./node_modules/three/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
+
+    <script type="module" src="lib/init.js"></script>
+    <script type="module" src="lib/ground.js"></script>
+    <script type="module" src="lib/tree.js"></script>
+    <script type="module" src="lib/sky.js"></script>
+    <script type="module" src="lib/player.js"></script>
+    <script type="module" src="lib/key.js"></script>
+    <script type="module" src="lib/slenderman_still.js"></script>
+</body>
+
+</html>

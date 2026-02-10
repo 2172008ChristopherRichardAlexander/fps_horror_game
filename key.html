@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+</style>
+<body>
+    <script type="importmap">
+        {
+            "imports": { 
+                "three": "./node_modules/three/build/three.module.js",
+                "OrbitControls": "./node_modules/three/examples/jsm/controls/OrbitControls.js",
+                "GLTFLoader": "./node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+                "@lodash/startCase": "https://unpkg.com/lodash-es@4.17.21/startCase.js"
+            }
+        }
+    </script>
+    <script type="module" src="lib/keys.js"></script>
+    <!-- <script type="module">
+        import { GLTFLoader } from 'GLTFLoader';
+        import * as THREE from '../node_modules/three/build/three.module.js';
+
+        let scene, camera, renderer;
+
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xdddddd);
+
+            camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 5000);
+
+            let hlight = new THREE.AmbientLight(0x404040, 100);
+            scene.add(hlight);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            let texture = new THREE.TextureLoader().load('models/key/textures/material_baseColor.png');
+
+            let key;
+            const loader = new GLTFLoader().load('models/key/scene.gltf', function(result){
+                key = result.scene.children[0];
+                key.scale.set(0.5, 0.5, 0.5);
+                console.log(result)
+                scene.add(key);
+            });
+            renderer.render(scene, camera);
+        }
+
+        init();
+    </script> -->
+</body>
+
+</html>

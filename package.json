@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "canon": "^0.4.1",
+    "dat.gui": "^0.7.9",
+    "three": "^0.159.0",
+    "three-fbx-loader": "^1.0.3"
+  },
+  "devDependencies": {
+    "vite": "^5.0.11"
+  }
+}
